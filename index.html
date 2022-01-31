@@ -1,23 +1,35 @@
-<style>
-body {
-  background-image:url('pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/');
-  background-repeat:no-repeat;
-  background-size:cover;}
-h1   {color: blue;
-  text-align:center;}
-p    {color: black;
-  font-size:250px;
-  text-align:center;}
-</style>
-<p>SAI</p>
-<video width="320" height="240" controls>
-  <source src="https://www.pexels.com/video/video-of-funny-cat-855029/" type="video/mp4">
-  <source src="https://www.pexels.com/video/video-of-funny-cat-855029/" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-  <h1 >HII FRIENDS, THIS IS SATHWIK HERE ....</h1>
-   <h1 >WELCOME TO MY FIRST WEB PAGE</h1>
-  <h1 title="BIO">I'M HERE TO SHARE MY BIO</h1>
-  <h1 >NAME: SATHWIK REDDY</h1>
-<h1> COURSE: COMPUTER SCIENCE AND ENGINEERING </h1>
-<h1 > COLLEGE:VAAGDEVI COLLEGE OF ENGINEERING </h1>
+
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New Tab</title>
+    <style>
+      body {
+        background: #35363A;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="backgroundImage" src="chrome-untrusted://new-tab-page/custom_background_image?url=https%3A%2F%2Flh4.googleusercontent.com%2Fproxy%2FkRPxDZJGVKBIyjQaFQaVwMqk9EtBtgMPZWneJw06iT64E6ecHM8KGXGBgwZ-1IZ_zBTHykJqYd7H1TypoBprCFzs3x47hd95V5jl9UvFEyoS%3Dw3840-h2160-p-k-no-nd-mv"></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
+</html>
